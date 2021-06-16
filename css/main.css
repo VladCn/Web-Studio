@@ -763,6 +763,9 @@ address {
   display: flex;
   flex-wrap: wrap;
 }
+.client__item:not(:last-child) {
+  flex-basis: calc(100% / 2);
+}
 @media screen and (min-width: 480px) {
   .client__list {
     display: flex;
@@ -771,9 +774,9 @@ address {
   .client__item:not(:last-child) {
     margin-right: 30px;
   }
-}
-.client__item:not(:last-child) {
-  flex-basis: calc(100% / 2);
+  .client__item:not(:last-child) {
+    flex-basis: auto;
+  }
 }
 
 .client__link {

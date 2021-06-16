@@ -4,6 +4,9 @@
     flex-wrap: wrap;
 
   }
+  &__item:not(:last-child) {
+    flex-basis: calc(100% / 2);
+  }
 
   @media screen and (min-width: 480px) {
     &__list {
@@ -13,11 +16,11 @@
     &__item:not(:last-child) {
       margin-right: 30px;
     }
+    &__item:not(:last-child) {
+      flex-basis: auto;
+    }
   }
 
-  &__item:not(:last-child) {
-    flex-basis: calc(100% / 2);
-  }
 }
 
   .client__link {
