@@ -10,8 +10,10 @@
     text-transform: uppercase;
     margin-bottom: 20px;
   }
-  &__list{
-    display: flex;
+  @media screen and (min-width: 480px) {
+    &__list {
+      display: flex;
+    }
   }
   &__button {
     cursor: pointer;

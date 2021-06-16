@@ -141,7 +141,7 @@ header {
   margin-right: auto;
 }
 .section-hero__name {
-  width: 696px;
+  width: auto;
   margin: 0 auto 30px auto;
   font-size: 44px;
   font-weight: 900;
@@ -211,15 +211,16 @@ footer {
   background-color: #2F303A;
 }
 
-.section-foot {
-  display: flex;
-  align-items: baseline;
-  padding: 60px 15px;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 480px) {
+  .section-foot {
+    display: flex;
+    align-items: baseline;
+    padding: 60px 15px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
 .foot {
   margin-right: 70px;
 }
@@ -569,8 +570,10 @@ address {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.subscription__list {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .subscription__list {
+    display: flex;
+  }
 }
 .subscription__button {
   cursor: pointer;
@@ -757,16 +760,20 @@ address {
 }
 
 .client__list {
-  flex-basis: calc(100% / 3);
+  display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 480px) {
   .client__list {
     display: flex;
     justify-content: space-between;
   }
+  .client__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .client__item:not(:last-child) {
-  margin-right: 30px;
+  flex-basis: calc(100% / 2);
 }
 
 .client__link {
@@ -804,9 +811,6 @@ address {
   .chips__item:not(:last-child) {
     margin-right: 30px;
   }
-}
-.chips__item {
-  margin-right: 30px;
 }
 .chips__pic {
   width: auto;

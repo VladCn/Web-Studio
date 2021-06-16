@@ -1,6 +1,8 @@
 .client {
   &__list {
-    flex-basis: calc(100% / 3);
+    display: flex;
+    flex-wrap: wrap;
+
   }
 
   @media screen and (min-width: 480px) {
@@ -8,10 +10,13 @@
       display: flex;
       justify-content: space-between;
     }
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   &__item:not(:last-child) {
-    margin-right: 30px;
+    flex-basis: calc(100% / 2);
   }
 }
 
