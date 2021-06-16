@@ -14,10 +14,14 @@
 }
 
 .container{
-  width: 1200px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 1200px;
+  }
 }
 
 .studio {
@@ -34,7 +38,11 @@
   font-family: inherit;
 }
 .features{
+  padding-top: 60px;
+
+  @media screen and (min-width: 480px){
   padding-top: 94px;
+  }
 }
 
 

@@ -102,9 +102,11 @@ header {
   position: relative;
 }
 
-.header {
-  display: flex;
-  align-items: center;
+@media screen and (min-width: 480px) {
+  .header {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .active::after {
@@ -295,10 +297,15 @@ footer {
 }
 
 .container {
-  width: 1200px;
+  width: auto;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .studio {
@@ -317,7 +324,12 @@ footer {
 }
 
 .features {
-  padding-top: 94px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 480px) {
+  .features {
+    padding-top: 94px;
+  }
 }
 
 .nav {
@@ -334,7 +346,12 @@ footer {
   margin-right: 93px;
 }
 .nav__list {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 480px) {
+  .nav__list {
+    display: flex;
+  }
 }
 .nav__item:not(:last-child) {
   margin-right: 50px;
@@ -365,40 +382,45 @@ footer {
 }
 
 .contact {
-  display: flex;
-  margin-left: auto;
+  display: none;
 }
-.contact__item:not(:last-child) {
-  margin-right: 50px;
-}
-.contact__item {
-  display: flex;
-  align-items: center;
-  fill: currentColor;
-}
-.contact__item:hover {
-  fill: var(--hov-blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact__icon {
-  margin-right: 10px;
-}
-.contact__link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--back-grey-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contact__link:hover, .contact__link:focus {
-  color: #2196F3;
+@media screen and (min-width: 480px) {
+  .contact {
+    display: flex;
+    margin-left: auto;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contact__item {
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+  }
+  .contact__item:hover {
+    fill: var(--hov-blue-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact__icon {
+    margin-right: 10px;
+  }
+  .contact__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--back-grey-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact__link:hover, .contact__link:focus {
+    color: #2196F3;
+  }
 }
 
 address {
@@ -759,14 +781,22 @@ address {
   border-color: var(--hov-blue-color);
 }
 
-.chips__list {
-  display: flex;
+@media screen and (min-width: 480px) {
+  .chips__list {
+    display: flex;
+  }
+  .chips__pic {
+    width: 270px;
+  }
+  .chips__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.chips__item:not(:last-child) {
+.chips__item {
   margin-right: 30px;
 }
 .chips__pic {
-  width: 270px;
+  width: auto;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 5px;
