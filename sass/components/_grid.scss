@@ -1,0 +1,17 @@
+.grid {
+  display: flex;
+
+  &__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+  &__space-between {
+    justify-content: space-between;
+  }
+}
+
+
+.grid__item--mb:not(:last-of-type) {
+  margin-bottom: 10px;
+}
