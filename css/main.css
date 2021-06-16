@@ -757,8 +757,13 @@ address {
 }
 
 .client__list {
-  display: flex;
-  justify-content: space-between;
+  flex-basis: calc(100% / 3);
+}
+@media screen and (min-width: 480px) {
+  .client__list {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .client__item:not(:last-child) {
   margin-right: 30px;
@@ -825,6 +830,9 @@ address {
 
 .team {
   background: #F5F4FA;
+}
+.team__list {
+  display: block;
 }
 @media screen and (min-width: 480px) {
   .team__list {
