@@ -667,6 +667,23 @@ address {
   background: #188CE8;
 }
 
+.menu-button {
+  display: inline-flex;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
 .label .label__text {
   display: block;
   font-size: 12px;
