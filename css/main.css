@@ -142,6 +142,11 @@ header {
 .menu-container.is-open {
   display: block;
 }
+@media screen and (min-width: 480px) {
+  .menu-container.is-open {
+    display: none;
+  }
+}
 .menu-container__list {
   display: block;
 }
