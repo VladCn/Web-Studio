@@ -1,10 +1,11 @@
 .menu-container{
   display: none;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vh;
   height: 100vh;
-  background-color: #188CE8;
+  background-color: #ffffff;
   //padding: 20px 0;
   overflow: auto;
   //text-align: center;
@@ -18,8 +19,6 @@
       display: none;
     }
   }
-
-
 
   &__list {
     display: block;}
@@ -38,10 +37,11 @@
   }
   &__link {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 40px;
     line-height: 1.14;
+    text-align: center;
     letter-spacing: 0.02em;
-    color: var(--sec-color);
+    color: #212121;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -56,5 +56,19 @@
   }
 }
 .mob-cont{
-  padding: 48px 40px;
+  position: relative;
+  padding: 48px 0;
+
+  &__close{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top:10px;
+    right: 80%;
+
+
+  }
 }
