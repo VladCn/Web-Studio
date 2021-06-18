@@ -35,6 +35,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
   &__link {
     font-weight: 500;
     font-size: 40px;
@@ -69,6 +74,11 @@
     position: absolute;
     top:10px;
     right: 0;
-
+  }
+  &__close:hover {
+    fill: var(--hov-blue-color);
+    transition-property: fill;
+    //transition-duration: 250ms;
+    //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
