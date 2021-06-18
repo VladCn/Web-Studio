@@ -963,6 +963,7 @@ address {
   height: 100vh;
   background-color: #ffffff;
   overflow: auto;
+  padding: 48px 0;
 }
 .menu-container.is-open {
   display: block;
@@ -1006,8 +1007,7 @@ address {
 
 .mob-cont {
   display: block;
-  position: relative;
-  padding: 48px 0;
+  padding-left: 40px;
 }
 .mob-cont__close {
   width: 40px;

@@ -10,7 +10,7 @@
   overflow: auto;
   //text-align: center;
   //font-size: 20px;
-
+  padding: 48px 0;
 
   &.is-open{
     display: block;
@@ -57,8 +57,8 @@
 }
 .mob-cont{
   display: block;
-  position: relative;
-  padding: 48px 0;
+  //position: relative;
+  padding-left: 40px;
 
   &__close{
     width: 40px;
@@ -69,7 +69,6 @@
     position: absolute;
     top:10px;
     right: 0;
-
 
   }
 }
