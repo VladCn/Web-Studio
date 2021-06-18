@@ -959,7 +959,7 @@ address {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background-color: #ffffff;
   overflow: auto;
@@ -1005,6 +1005,7 @@ address {
 }
 
 .mob-cont {
+  display: block;
   position: relative;
   padding: 48px 0;
 }
@@ -1016,7 +1017,7 @@ address {
   background-color: transparent;
   position: absolute;
   top: 10px;
-  right: 80%;
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
