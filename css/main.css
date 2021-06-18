@@ -136,7 +136,6 @@ header {
   position: absolute;
   top: 100%;
   width: 100%;
-  left: 0;
   background-color: #188CE8;
   padding: 20px 0;
   text-align: center;
@@ -357,8 +356,60 @@ footer {
 }
 
 .nav {
+  display: block;
+}
+.nav__mobile {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+  .nav__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav__item {
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+  }
+  .nav__item:hover {
+    fill: var(--hov-blue-color);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--sec-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav__link:hover, .nav__link:focus {
+    color: #2196F3;
+  }
+}
+.nav__list {
+  display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .nav__list {
+    display: flex;
+  }
 }
 .nav__logo {
   font-family: Raleway;
@@ -368,41 +419,6 @@ footer {
   letter-spacing: 0.03em;
   color: #2196F3;
   margin-right: 93px;
-}
-.nav__list {
-  display: none;
-}
-@media screen and (min-width: 480px) {
-  .nav__list {
-    display: flex;
-  }
-}
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-.nav__item {
-  display: flex;
-  align-items: center;
-  fill: currentColor;
-}
-.nav__item:hover {
-  fill: var(--hov-blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--sec-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav__link:hover, .nav__link:focus {
-  color: #2196F3;
 }
 
 .contact {
@@ -699,6 +715,11 @@ address {
   display: none;
 }
 
+@media screen and (min-width: 480px) {
+  .menu-button {
+    display: none;
+  }
+}
 .label .label__text {
   display: block;
   font-size: 12px;
