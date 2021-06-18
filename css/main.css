@@ -131,53 +131,6 @@ header {
   bottom: 0;
 }
 
-.menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  background-color: #188CE8;
-  padding: 20px 0;
-}
-.menu-container.is-open {
-  display: block;
-}
-@media screen and (min-width: 480px) {
-  .menu-container.is-open {
-    display: none;
-  }
-}
-.menu-container__list {
-  display: block;
-}
-.menu-container__item {
-  display: flex;
-  align-items: center;
-  fill: currentColor;
-}
-.menu-container__item:hover {
-  fill: var(--hov-blue-color);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-container__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--sec-color);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-container__link:hover, .menu-container__link:focus {
-  color: #2196F3;
-}
-.menu-container .menu-link {
-  display: flex;
-}
-
 .section-hero {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-back.jpg);
   background-color: #2F303A;
@@ -999,6 +952,58 @@ address {
 .example__link:hover > .outgoing-list p, .example__link:focus > .outgoing-list p {
   pointer-events: all;
   transform: translate(-50%, -50%);
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100vh;
+  height: 100vh;
+  background-color: #188CE8;
+  overflow: auto;
+}
+.menu-container.is-open {
+  display: block;
+}
+@media screen and (min-width: 480px) {
+  .menu-container.is-open {
+    display: none;
+  }
+}
+.menu-container__list {
+  display: block;
+}
+.menu-container__item {
+  display: flex;
+  align-items: center;
+  fill: currentColor;
+}
+.menu-container__item:hover {
+  fill: var(--hov-blue-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--sec-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-container__link:hover, .menu-container__link:focus {
+  color: #2196F3;
+}
+.menu-container .menu-link {
+  display: flex;
+}
+
+.mob-cont {
+  padding: 48px 40px;
 }
 
 /*# sourceMappingURL=main.css.map */
