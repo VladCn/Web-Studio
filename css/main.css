@@ -975,6 +975,7 @@ address {
 }
 .menu-container__list {
   display: block;
+  margin-bottom: 302px;
 }
 .menu-container__item {
   display: flex;
@@ -1004,9 +1005,6 @@ address {
 .menu-container__link:hover, .menu-container__link:focus {
   color: #2196F3;
 }
-.menu-container .menu-link {
-  display: flex;
-}
 
 .mob-cont {
   display: block;
@@ -1025,6 +1023,45 @@ address {
 .mob-cont__close:hover {
   fill: var(--hov-blue-color);
   transition-property: fill;
+}
+
+.menu-contact {
+  margin-bottom: 64px;
+}
+.menu-contact__item {
+  margin-bottom: 32px;
+}
+.menu-contact__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--hov-blue-color);
+}
+.menu-contact__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  color: var(--back-grey-color);
+}
+
+.menu-social {
+  display: flex;
+}
+.menu-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.menu-social__item:not(:first-child) {
+  padding-left: 10px;
+}
+.menu-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: var(--hov-blue-color);
 }
 
 /*# sourceMappingURL=main.css.map */

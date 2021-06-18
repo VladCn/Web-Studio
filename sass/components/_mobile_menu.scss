@@ -21,7 +21,9 @@
   }
 
   &__list {
-    display: block;}
+    display: block;
+    margin-bottom: 302px;
+  }
 
   &__item {
     display: flex;
@@ -56,9 +58,6 @@
   &__link:focus {
     color: #2196F3;
   }
-  .menu-link{
-    display: flex;
-  }
 }
 .mob-cont{
   display: block;
@@ -81,4 +80,44 @@
     //transition-duration: 250ms;
     //transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+.menu-contact{
+  margin-bottom: 64px;
+
+  &__item{
+    margin-bottom: 32px;
+  }
+  &__tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    color: var(--hov-blue-color);
+  }
+  &__mail{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    color: var(--back-grey-color);
+  }
+}
+
+.menu-social{
+  display: flex;
+  &__item:not(:last-child){
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right:10px;
+  }
+  &__item:not(:first-child){
+    padding-left: 10px;
+  }
+  &__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--hov-blue-color);
+  }
+
 }
