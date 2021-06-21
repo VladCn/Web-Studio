@@ -10,11 +10,10 @@
     &__item:not(:last-child) {
       margin-right: 30px;
     }
-
   }
 
 
-  &__pic {
+      &__pic {
     width: auto;
     height: 120px;
     background-color: #F5F4FA;
