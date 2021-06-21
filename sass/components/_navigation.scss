@@ -23,9 +23,7 @@
 
 
 
-  &__item:not(:last-child) {
-      margin-right: 50px;
-    }
+
 
   &__item {
       display: flex;
@@ -62,8 +60,11 @@
 
 @media screen and (min-width: 480px)  {
   .nav__list {
-    display: flex;}
+    display: flex;
+    //margin-right: 84px;
+  }
 }
+
 
 .nav__logo {
   font-family: Raleway;
@@ -72,5 +73,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196F3;
-  margin-right: 93px;
+  margin-right: 0;
+}
+@media screen and (min-width: 768px){
+  .nav__logo {
+    margin-right: 93px;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }

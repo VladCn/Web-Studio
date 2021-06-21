@@ -8,7 +8,9 @@ header {
 .header {
   @media screen and (min-width: 480px){
   display: flex;
-  align-items: center;}
+  align-items: center;
+  justify-content: space-between;
+  }
 }
 
 .active::after {
