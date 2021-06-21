@@ -149,6 +149,11 @@ header {
   align-items: center;
   justify-content: center;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-hero .section-hero {
+    background-image: url(../images/header@2x.jpg);
+  }
+}
 .section-hero__name {
   width: auto;
   margin: 0 auto 30px auto;
@@ -286,12 +291,12 @@ footer {
 }
 
 .modal {
+  width: 450px;
+  height: 609px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background: #FFFFFF;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -322,6 +327,46 @@ footer {
 }
 .modal__item:not(:last-child) {
   margin-right: 8px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 43px 36px 37px 44px;
+  }
+  .modal-mb {
+    margin-bottom: 30px;
+  }
+  .modal__form {
+    margin-bottom: 30px;
+  }
+  .modal__text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 12px;
+  }
+  .modal__list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .modal__item {
+    margin-bottom: 9px;
+  }
+  .modal__item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .a-dogov {
@@ -776,7 +821,7 @@ address {
   position: relative;
 }
 .label__input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -787,6 +832,11 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .label__input {
+    width: 448px;
+  }
 }
 .label__input:hover, .label__input:focus {
   border-color: #2196F3;
@@ -807,7 +857,7 @@ address {
 
 .label__textarea {
   resize: none;
-  width: 448px;
+  width: 370px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -822,6 +872,11 @@ address {
 }
 .label__textarea:focus, .label__textarea:hover {
   border-color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .label__textarea {
+    width: 448px;
+  }
 }
 
 .contract {
