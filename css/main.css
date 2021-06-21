@@ -135,25 +135,55 @@ header {
 }
 
 .section-hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-back.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header@1x.jpg);
   background-color: #2F303A;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 480px;
+  height: 400px;
   text-align: center;
   padding: 200px 0;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .section-hero__name {
   width: auto;
   margin: 0 auto 30px auto;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--ther-white-color);
+}
+@media screen and (min-width: 480px) {
+  .section-hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-back.jpg);
+    background-color: #2F303A;
+    background-size: cover;
+    max-width: 1600px;
+    text-align: center;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+  }
+  .section-hero__name {
+    max-width: 696px;
+    margin: 0 auto 30px auto;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--ther-white-color);
+  }
 }
 
 .workflow {
