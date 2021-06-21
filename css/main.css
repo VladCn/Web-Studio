@@ -410,7 +410,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .nav__logo {
-    margin-right: 93px;
+    margin-right: 88px;
   }
 
   .nav__item:not(:last-child) {
@@ -440,13 +440,13 @@ footer {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .contact__icon {
-    margin-right: 10px;
+    margin-right: 8px;
   }
   .contact__link {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--back-grey-color);
@@ -463,6 +463,12 @@ footer {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+  }
+  .contact__link {
+    font-size: 14px;
+  }
+  .contact__icon {
+    margin-right: 10px;
   }
   .contact__item:not(:last-child) {
     margin-right: 50px;
