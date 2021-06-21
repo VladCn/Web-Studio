@@ -5,15 +5,39 @@
       display: flex;
     }
     &__pic {
-        width: 270px;
-      }
-    &__item:not(:last-child) {
-      margin-right: 30px;
+      width: 270px;
     }
   }
 
+    @media screen and (min-width: 768px) {
+      &__list {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
 
-      &__pic {
+      }
+      .element {
+        flex-basis: calc(100% / 2);
+        font-size: 32px;
+      }
+      &__item{
+        width: 354px;
+      }
+
+    }
+
+
+  @media screen and (min-width: 1200px){
+    &__item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &__list {
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+    }
+  };
+
+
+  &__pic {
     width: auto;
     height: 120px;
     background-color: #F5F4FA;
@@ -35,4 +59,5 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
   }
+
 }

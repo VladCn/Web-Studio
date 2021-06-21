@@ -964,8 +964,27 @@ address {
   .chips__pic {
     width: 270px;
   }
+}
+@media screen and (min-width: 768px) {
+  .chips__list {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .chips .element {
+    flex-basis: calc(100% / 2);
+    font-size: 32px;
+  }
+  .chips__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .chips__item:not(:last-child) {
     margin-right: 30px;
+  }
+  .chips__list {
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
   }
 }
 .chips__pic {
