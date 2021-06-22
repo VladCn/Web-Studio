@@ -1054,7 +1054,6 @@ address {
   border-radius: 0 0 4px 4px;
   margin-top: 30px;
   margin-left: 0;
-  max-width: 450px;
 }
 @media screen and (min-width: 480px) {
   .team__item {
@@ -1070,6 +1069,13 @@ address {
 @media screen and (min-width: 480px) {
   .thumb {
     max-width: 354px;
+    min-width: 254px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .thumb {
+    max-width: 270px;
     min-width: 254px;
     margin: 0 auto;
   }
