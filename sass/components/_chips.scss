@@ -7,6 +7,10 @@
     &__pic {
       width: 270px;
     }
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+
   }
 
     @media screen and (min-width: 768px) {
@@ -22,9 +26,7 @@
       &__item{
         width: 354px;
       }
-
     }
-
 
   @media screen and (min-width: 1200px){
     &__item:not(:last-child) {
@@ -35,6 +37,20 @@
       flex-wrap: nowrap;
     }
   };
+  &__item:not(:last-child)  {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px){
+    margin-bottom: 0;
+    }
+
+  }
+
+  &__item:nth-child(n+3){
+    @media screen and (min-width: 768px){
+    margin-bottom: 0;
+    }
+  }
 
 
   &__pic {
@@ -52,12 +68,19 @@
   &__name {
     text-transform: var(--upper-text-transform);
     margin-bottom: 10px;
+    text-align: center;
+
+    @media screen and (min-width: 480px){
+      text-align: left;
+    }
   }
 
   &__text{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-  }
+
+    }
+
 
 }

@@ -374,7 +374,12 @@ footer {
 }
 
 .section {
-  padding: 94px 0px;
+  padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 .section__title {
   font-weight: bold;
@@ -412,7 +417,7 @@ footer {
 }
 
 .features {
-  padding-top: 60px;
+  padding: 60px 0;
 }
 @media screen and (min-width: 480px) {
   .features {
@@ -964,6 +969,9 @@ address {
   .chips__pic {
     width: 270px;
   }
+  .chips__item:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 @media screen and (min-width: 768px) {
   .chips__list {
@@ -987,6 +995,19 @@ address {
     flex-wrap: nowrap;
   }
 }
+.chips__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .chips__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .chips__item:nth-child(n+3) {
+    margin-bottom: 0;
+  }
+}
 .chips__pic {
   width: auto;
   height: 120px;
@@ -1000,6 +1021,12 @@ address {
 .chips__name {
   text-transform: var(--upper-text-transform);
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .chips__name {
+    text-align: left;
+  }
 }
 .chips__text {
   font-size: 14px;
