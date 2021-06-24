@@ -750,10 +750,21 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+  .subscription__label {
+    text-align: left;
+  }
+}
+.subscription__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
   .subscription__list {
-    display: flex;
+    flex-direction: row;
   }
 }
 .subscription__button {
@@ -789,6 +800,12 @@ address {
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .inp {
+    margin-bottom: 0;
+  }
 }
 .inp::placeholder {
   color: rgba(255, 255, 255, 0.6);
