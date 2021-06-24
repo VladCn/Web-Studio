@@ -333,7 +333,7 @@ footer {
 .modal__item:not(:last-child) {
   margin-right: 8px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -942,6 +942,7 @@ address {
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .client__list {
@@ -1210,7 +1211,7 @@ address {
 .menu-container.is-open {
   display: block;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-container.is-open {
     display: none;
   }
