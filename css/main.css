@@ -52,7 +52,12 @@ img {
 h2 {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    margin-bottom: 50px;
+  }
 }
 
 h3 {
@@ -374,19 +379,24 @@ footer {
 }
 
 .section {
-  padding: 0;
+  padding: 60px 0;
 }
 @media screen and (min-width: 1200px) {
   .section {
-    padding: 94px 0px;
+    padding: 94px 0;
   }
 }
 .section__title {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.66;
   letter-spacing: 0.03em;
   color: var(--sec-color);
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+  }
 }
 
 .container {
@@ -419,7 +429,7 @@ footer {
 .features {
   padding: 60px 0;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .features {
     padding-top: 94px;
   }
