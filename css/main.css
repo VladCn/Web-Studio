@@ -1280,6 +1280,7 @@ address {
   background-color: #ffffff;
   overflow: auto;
   padding: 48px 0;
+  z-index: 10;
 }
 .menu-container.is-open {
   display: block;
