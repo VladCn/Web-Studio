@@ -258,7 +258,7 @@ footer {
 .section-foot {
   padding: 60px 15px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section-foot {
     display: flex;
     align-items: baseline;
@@ -308,7 +308,7 @@ footer {
     margin: 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .foot__connect {
     margin-right: 93px;
   }
@@ -321,6 +321,20 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .summ {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .summ {
+    margin-bottom: 0;
+  }
 }
 
 .modal {
@@ -752,7 +766,7 @@ address {
   margin-bottom: 20px;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .subscription__label {
     text-align: left;
   }
@@ -762,7 +776,7 @@ address {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .subscription__list {
     flex-direction: row;
   }
@@ -790,7 +804,7 @@ address {
 }
 
 .inp {
-  width: 358px;
+  width: 480px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -804,7 +818,13 @@ address {
 }
 @media screen and (min-width: 768px) {
   .inp {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .inp {
     margin-bottom: 0;
+    width: 358px;
   }
 }
 .inp::placeholder {
@@ -1052,7 +1072,7 @@ address {
 }
 @media screen and (min-width: 768px) {
   .client__link {
-    width: 210px;
+    width: 226px;
   }
 }
 @media screen and (min-width: 1200px) {
