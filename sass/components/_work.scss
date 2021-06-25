@@ -2,14 +2,14 @@
 
   &__list{
   display: flex;
-
-  margin: 0 auto 50px;
+  margin-bottom: 40px;
   justify-content: flex-start;
   flex-wrap: wrap;
 
     @media screen and (min-width: 768px){
       justify-content: center;
       flex-wrap: nowrap;
+      margin-bottom: 50px;
     }
 
 
