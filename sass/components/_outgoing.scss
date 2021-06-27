@@ -1,12 +1,23 @@
-.outgoing-list {
+.outgoing {
   position: relative;
   overflow: hidden;
+
+&__pic{
+  width: 450px;
+  @media screen and(min-width: 768px) {
+  width: 354px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 370px;
+  }
+  }
+
 
 
 &__text {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  width: 450px;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
@@ -18,5 +29,12 @@
   padding: 63px 24px;
   pointer-events: all;
   transition: transform 250ms;
+
+  @media screen and(min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 370px;
+  }
 }
 }

@@ -726,14 +726,27 @@ address {
   margin-right: 10px;
 }
 
-.outgoing-list {
+.outgoing {
   position: relative;
   overflow: hidden;
 }
-.outgoing-list__text {
+.outgoing__pic {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .outgoing__pic {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .outgoing__pic {
+    width: 370px;
+  }
+}
+.outgoing__text {
   position: absolute;
-  width: 370px;
-  height: 294px;
+  width: 450px;
+  height: 100%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
@@ -745,6 +758,16 @@ address {
   padding: 63px 24px;
   pointer-events: all;
   transition: transform 250ms;
+}
+@media screen and (min-width: 768px) {
+  .outgoing__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .outgoing__text {
+    width: 370px;
+  }
 }
 
 .logo-background--black {
@@ -1279,7 +1302,7 @@ address {
   display: inline-block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.example__link:hover > .outgoing-list p, .example__link:focus > .outgoing-list p {
+.example__link:hover > .outgoing p, .example__link:focus > .outgoing p {
   pointer-events: all;
   transform: translate(-50%, -50%);
 }
