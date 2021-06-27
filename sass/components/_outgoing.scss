@@ -1,6 +1,9 @@
 .outgoing {
   position: relative;
   overflow: hidden;
+  //max-width: 450px;
+  //min-width: 350px;
+  //margin: 0 auto;
 
 &__pic{
   width: 450px;
