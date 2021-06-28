@@ -44,9 +44,7 @@ footer {
 
   &__connect {
     text-align: center;
-    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-      margin: 0;
     }
 
 
@@ -66,10 +64,12 @@ footer {
     }
 }
 .summ{
+
+  margin-bottom: 60px;
+
   @media screen and(min-width: 768px) {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 60px;
     align-items: baseline
   }
   @media screen and (min-width: 1200px){

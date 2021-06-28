@@ -301,12 +301,6 @@ footer {
 }
 .foot__connect {
   text-align: center;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .foot__connect {
-    margin: 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .foot__connect {
@@ -323,11 +317,13 @@ footer {
   margin-bottom: 20px;
 }
 
+.summ {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) {
   .summ {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 60px;
     align-items: baseline;
   }
 }
@@ -442,12 +438,17 @@ footer {
 }
 
 .container {
-  width: auto;
+  max-width: 480px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
 }
 @media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
