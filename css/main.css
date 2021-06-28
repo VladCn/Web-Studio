@@ -140,7 +140,7 @@ header {
 }
 
 .section-hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-back.jpg);
   background-color: #2F303A;
   background-size: cover;
   max-width: 768px;
@@ -156,7 +156,7 @@ header {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
-    background-image: url(../images/header@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-back@2x.jpg);
   }
 }
 .section-hero__name {
@@ -172,8 +172,6 @@ header {
 }
 @media screen and (min-width: 768px) {
   .section-hero {
-    background-color: #2F303A;
-    background-size: cover;
     max-width: 1600px;
     text-align: center;
     padding: 200px 0;
