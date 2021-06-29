@@ -1,20 +1,17 @@
 footer {
   background-color: #2F303A;
+  padding: 60px 15px;
 }
 
-.section-foot{
-    padding: 60px 15px;
 
-@media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .foot {
   text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     text-align: left;
@@ -31,10 +28,7 @@ footer {
     color: #2196F3;
   }
   &__list{
-    margin-bottom: 60px;
-    @media screen and (min-width: 768px) {
-    margin: 0;
-    }
+
   }
 
   &__item{
@@ -44,9 +38,11 @@ footer {
 
   &__connect {
     text-align: center;
-    @media screen and (min-width: 768px) {
-    }
+    margin-bottom: 60px;
 
+    @media screen and (min-width: 768px) {
+      margin: 0;
+    }
 
     @media screen and (min-width: 1200px) {
       margin-right: 93px;
@@ -65,7 +61,8 @@ footer {
 }
 .summ{
 
-  margin-bottom: 60px;
+  //margin-bottom: 60px;
+
 
   @media screen and(min-width: 768px) {
     display: flex;
@@ -74,6 +71,11 @@ footer {
   }
   @media screen and (min-width: 1200px){
     margin-bottom: 0;
+    display: flex;
+    align-items: baseline;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
