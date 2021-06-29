@@ -46,10 +46,17 @@
 
   }
 
-  &__item:nth-child(n+3){
-    @media screen and (min-width: 768px){
-    margin-bottom: 0;
+  &__item:nth-child(n+3) {
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
     }
+  }
+    &__item:nth-child(odd){
+      @media screen and (min-width: 768px){
+        margin-right: 30px;
+      }
+
+
   }
 
 
