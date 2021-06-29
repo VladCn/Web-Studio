@@ -707,6 +707,16 @@ address {
   border: 1px solid #EEEEEE;
   border-top: none;
 }
+@media screen and (min-width: 768px) {
+  .meta-example {
+    min-height: 146px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .meta-example {
+    min-height: 0;
+  }
+}
 .meta-example__name {
   font-weight: bold;
   font-size: 18px;
@@ -1252,11 +1262,11 @@ address {
 .work__item:not(:last-child) {
   margin-right: 8px;
 }
-.work__item:nth-child(n+3) {
+.work__item:nth-child(1) {
   margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
-  .work__item:nth-child(n+3) {
+  .work__item:nth-child(1) {
     margin-bottom: 0;
   }
 }
@@ -1292,6 +1302,17 @@ address {
 .example__item {
   margin-left: 30px;
   margin-top: 30px;
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .example__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .example__item {
+    width: 370px;
+  }
 }
 .example__link {
   cursor: pointer;
